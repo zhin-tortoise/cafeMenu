@@ -1,0 +1,316 @@
+/* 汎用 */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 4vh;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+
+/* ルート */
+
+div#root {
+    width: 100%;
+    height: 100%;
+}
+
+img#root-background {
+    width: 100%;
+    height: 100%;
+}
+
+img#root-backgroundColor {
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    opacity: 0.5;
+}
+
+/* スクロールバー */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, .5);
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+/* ナビゲーション */
+div#root-navigation {
+    width: 100%;
+    height: 10%;
+    border-bottom: white solid 1px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+div#root-navigation-0 {
+    top: 20%;
+    left: 10%;
+    cursor: pointer;
+}
+
+div#root-navigation-1 {
+    top: 20%;
+    left: 30%;
+    cursor: pointer;
+}
+
+div#root-navigation-2 {
+    top: 20%;
+    left: 45%;
+    cursor: pointer;
+}
+
+/* メニューバー */
+div#root-menuBar {
+    width: 5%;
+    height: 90%;
+    top: 10%;
+    border-right: white solid 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div#root-menuBar * {
+    position: static;
+}
+
+p.root-menuBar-item {
+    font-size: 1.5vh;
+    margin-top: 20%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+/* メニュー */
+div#root-menu {
+    width: 65%;
+    height: 90%;
+    top: 10%;
+    left: 5%;
+}
+
+/* メニューリスト */
+ul#root-menu-list {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    flex-wrap: wrap;
+    border-right: white solid 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ul#root-menu-list * {
+    position: static;
+    list-style-type: none;
+}
+
+li.root-menu-list-item {
+    width: 33%;
+    height: auto;
+    padding: 0%;
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+img.root-menu-list-item-picture {
+    width: 100%;
+    height: auto;
+}
+
+p.root-menu-list-item-explain {
+    width: 100%;
+    height: auto;
+    font-size: 2vh;
+}
+
+/* メニュー詳細 */
+div#root-menu-detail {
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    overflow-y: auto;
+    border-right: white solid 1px;
+}
+
+img#root-menu-detail-picture {
+    width: 50%;
+    height: auto;
+    left: 25%;
+    padding-top: 1%;
+}
+
+p#root-menu-detail-name {
+    top: 40%;
+    left: 15%;
+    right: 10%;
+    font-size: 2vh;
+    text-align: center;
+}
+
+p#root-menu-detail-explain {
+    top: 50%;
+    height: 20%;
+    font-size: 2vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow-y: auto;
+}
+
+p#root-menu-detail-0 {
+    top: 75%;
+    left: 10%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+p#root-menu-detail-1 {
+    top: 75%;
+    left: 60%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+p#root-menu-detail-2 {
+    top: 85%;
+    left: 10%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+p#root-menu-detail-3 {
+    top: 85%;
+    left: 60%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+/* 注文 */
+div#root-order {
+    width: 30%;
+    height: 60%;
+    top: 10%;
+    right: 0%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom: white solid 1px;
+}
+
+ul#root-order-list {
+    left: 10%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#root-order-list * {
+    position: static;
+}
+
+li.root-order-list-item {
+    width: 100%;
+}
+
+p.root-order-list-item-cancel {
+    font-size: 2vh;
+    display: inline;
+    cursor: pointer;
+}
+
+p.root-order-list-item-name {
+    font-size: 2vh;
+    display: inline;
+}
+
+p.root-order-list-item-money {
+    font-size: 2vh;
+    display: inline;
+}
+
+/* 料金計算 */
+div#root-calc {
+    width: 30%;
+    height: 30%;
+    right: 0%;
+    bottom: 0%;
+}
+
+p#root-calc-sum {
+    top: 10%;
+    left: 20%;
+    margin: 0;
+    font-size: 3vh;
+}
+
+p#root-calc-sumNumber {
+    top: 10%;
+    left: 60%;
+    margin: 0;
+    font-size: 3vh;
+}
+
+p#root-calc-pay {
+    top: 30%;
+    left: 20%;
+    margin: 0;
+    font-size: 3vh;
+}
+
+p#root-calc-payNumber {
+    top: 30%;
+    left: 60%;
+    width: 20%;
+    margin: 0;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+p#root-calc-button {
+    top: 50%;
+    left: 40%;
+    margin: 0;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+p#root-calc-change {
+    top: 70%;
+    left: 20%;
+    margin: 0;
+    font-size: 3vh;
+}
+
+p#root-calc-changeNumber {
+    top: 70%;
+    left: 60%;
+    margin: 0;
+    font-size: 3vh;
+}
